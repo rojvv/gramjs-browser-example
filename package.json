@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "dev": "npm run build -- --watch",
+    "build": "esbuild src/main.js --outdir=dist --bundle --minify --sourcemap --external:events --external:path --external:os --external:util --external:net --external:stream --external:constants --external:assert --external:fs --external:crypto"
+  },
+  "devDependencies": {
+    "esbuild": "^0.17.18",
+    "telegram": "^2.16.4"
+  }
+}
