@@ -1,3 +1,5 @@
-import { TelegramClient } from "telegram";
+const { TelegramClient } = require("telegram");
 
 // ...
+const client = new TelegramClient();
+client.connect();
